@@ -113,13 +113,17 @@ const Courses = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredCourses.map((course) => (
-              <div key={course.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+              // <div key={course.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col">
+              <div key={course.id} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
+
                 <img 
                   src={course.image} 
                   alt={course.title}
                   className="w-full h-48 object-cover"
                 />
-                <div className="p-6">
+                {/* <div className="p-6"> */}
+                <div className="p-6 flex flex-col flex-grow">
+
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
                     {course.title}
                   </h3>
@@ -142,9 +146,18 @@ const Courses = () => {
                     </div>
                   </div>
                   
-                  <button className="w-full btn-primary">
+                  {/* <button className="w-full btn-primary">
                     Learn More
-                  </button>
+                  </button> */}
+                  <a 
+                      href="https://yourwebsite.com/course-details" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="w-full btn-primary inline-block text-center mt-auto"
+                    >
+                     Load More
+                      </a>
+
                 </div>
               </div>
             ))}

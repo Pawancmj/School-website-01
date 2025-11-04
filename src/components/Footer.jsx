@@ -16,11 +16,37 @@ const Footer = () => {
               Excellence in education, fostering innovation and critical thinking in the digital age. 
               Preparing students for tomorrow's challenges with today's advanced learning methods.
             </p>
-            <div className="flex space-x-4">
+            {/* <div className="flex space-x-4">
               <Facebook className="h-5 w-5 text-gray-400 hover:text-primary-500 cursor-pointer transition-colors" />
               <Twitter className="h-5 w-5 text-gray-400 hover:text-primary-500 cursor-pointer transition-colors" />
               <Instagram className="h-5 w-5 text-gray-400 hover:text-primary-500 cursor-pointer transition-colors" />
-            </div>
+            </div> */}
+            <div className="flex space-x-4">
+  <a 
+    href="https://www.facebook.com/YourPageName" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <Facebook className="h-5 w-5 text-gray-400 hover:text-primary-500 cursor-pointer transition-colors" />
+  </a>
+
+  <a 
+    href="https://www.linkedin.com/company/cyberforenx-associate" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <Twitter className="h-5 w-5 text-gray-400 hover:text-primary-500 cursor-pointer transition-colors" />
+  </a>
+
+  <a 
+    href="https://www.instagram.com/cyberforenx/" 
+    target="_blank" 
+    rel="noopener noreferrer"
+  >
+    <Instagram className="h-5 w-5 text-gray-400 hover:text-primary-500 cursor-pointer transition-colors" />
+  </a>
+</div>
+
           </div>
 
           {/* Contact Info */}
@@ -33,11 +59,25 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4 text-primary-500" />
-                <span className="text-gray-300 text-sm">+1 (555) 123-4567</span>
+                {/* <span className="text-gray-300 text-sm">+1 (555) 123-4567</span> */}
+                <a 
+                     href="tel:+15551234567" 
+                      className="text-gray-300 text-sm hover:text-primary-500 transition-colors"
+>
+               +1 (555) 123-4567
+</a>
+
               </div>
               <div className="flex items-center space-x-2">
                 <Mail className="h-4 w-4 text-primary-500" />
-                <span className="text-gray-300 text-sm">info@cyberforenx.edu</span>
+                {/* <span className="text-gray-300 text-sm">info@cyberforenx.edu</span> */}
+                <a 
+                    href="mailto:info@cyberforenx.edu" 
+                    className="text-gray-300 text-sm hover:text-primary-500 transition-colors"
+>
+                     info@cyberforenx.edu
+</a>
+
               </div>
             </div>
           </div>
